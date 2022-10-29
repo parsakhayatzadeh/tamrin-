@@ -1,0 +1,33 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(216, 216, 216);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.bookList {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 5rem auto;
+    display: grid;
+    gap: 2rem;
+}
+
+@media screen and (min-width : 400px) {
+    .bookList {
+        grid-template-columns: repeat(2, 4fr);
+    }
+}
+
+@media screen and (min-width : 800px) {
+    .bookList {
+        grid-template-columns: repeat(3, 4fr);
+    }
+}
+
